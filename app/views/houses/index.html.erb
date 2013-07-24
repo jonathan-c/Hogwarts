@@ -1,3 +1,5 @@
+<ul>
 <% @houses.each do |house| %>
-  <a href="<%= house_path(house) %>"><%= house.name %></a>
+  <li><a href="<%= house_path(house) %>"><%= house.name %></a></li>
 <% end %>
+<ul>
