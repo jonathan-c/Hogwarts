@@ -1,0 +1,6 @@
+<h1>Make a new student!<h1>
+<%= form_for(@student) do |f| %>
+	<%= f.label :student_name %>
+	<%= f.text_field :name %><br/>
+	<%= f.submit "Add Student!" %>
+<% end %>
