@@ -1,6 +1,7 @@
 class HousesController < ActionController
   def index
-    @house = House.all
+    debugger
+    @houses = House.all
   end
 
 end
