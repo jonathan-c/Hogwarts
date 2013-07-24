@@ -11,14 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130710032742) do
+ActiveRecord::Schema.define(:version => 20130724181116) do
 
   create_table "houses", :force => true do |t|
     t.string "name"
   end
 
   create_table "students", :force => true do |t|
-    t.string "name"
+    t.string  "name"
+    t.integer "house_id"
   end
 
 end
