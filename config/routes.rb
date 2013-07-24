@@ -1,7 +1,6 @@
 Hogwarts::Application.routes.draw do
-  root to: 'welcome/index'
+  root to: 'welcome#index'
 
-  get '/houses' => 'houses#List'
-  get '/students' => 'students#index'
-  get '/students' => 'students#creat'
+  resources :students, only: [:index, :new, :create]
+  resources :houses, only: [:index]
 end

@@ -1,3 +1,3 @@
-def Student < ActiveREcord::Base
+class Student < ActionController::Base
   attr_accessible :name
 end
