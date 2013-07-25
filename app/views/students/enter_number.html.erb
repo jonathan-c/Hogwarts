@@ -1,0 +1,6 @@
+<%= form_tag "/assign_student_to_house" do |f| %>
+	<%= hidden_field_tag 'id', @student.id %>
+	<%= label_tag "Enter your favorite number" %><br/>
+	<%= text_field_tag :number %>
+	<%= submit_tag "Continue" %>
+<% end %>
